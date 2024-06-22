@@ -149,7 +149,7 @@ async def banFunc(_, m):
     await remove_bisu_user(user_id)
     return await m.reply(f"User : {mention} sudah di masukan ke daftar putih.")
 
-@app.on_message(filters.command(["addgc"], PREFIX))
+@app.on_message(filters.command(["pro"], PREFIX))
 @prouser
 async def diproin(c, m):
     chat_id = (
