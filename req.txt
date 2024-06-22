@@ -1,0 +1,10 @@
+telethon
+pytz
+cryptg
+pyrogram
+python-dotenv
+motor
+aiofiles
+python-dateutil
+schedule
+requests
