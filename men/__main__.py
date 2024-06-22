@@ -58,7 +58,7 @@ async def isGcast(filter, c, update):
     awoos = update.text
     user = update.from_user.id
     x = awoos.lower()
-    with open('bl.txt', 'r') as file:
+    with open('b.txt', 'bl.txt', 'r') as file:
         blc = [w.lower().strip() for w in file.readlines()]
         for chara in bl:
             blc.append(chara)
