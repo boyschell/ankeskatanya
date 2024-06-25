@@ -7,7 +7,7 @@ load_dotenv()
 
 API_ID = int(os.getenv("API_ID", "29320516"))
 API_HASH = os.getenv("API_HASH", "bcc68b59eb17c36b951965de3247a59d")
-TOKEN = os.getenv("TOKEN", "7387986350:AAGRkdpZOadT-vbMp1ZRnDB8FLK1gmz480k")
+TOKEN = os.getenv("TOKEN", "7382182408:AAHQkG1f25uOEE_SEqoniCSb2Joi8itKMpI")
 DB_NAME = os.getenv("DB_NAME", "pler")
 MONGO = os.getenv("MONGO", "mongodb+srv://assistantchell:chell1234@cluster0.txscyxy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 GOKIL = ". ! ? / , - +"
