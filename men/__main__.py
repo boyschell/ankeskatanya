@@ -49,20 +49,11 @@ async def isGcast(filter, c, update):
     awoos = update.text
     user = update.from_user.id
     x = awoos.lower()
-    bl_url = "https://raw.githubusercontent.com/naya1503/bl/main/bl.json"
-    response = requests.get(bl_url)
-    if response.status_code == 200:
-        lbl = response.text.split("\n")
-    else:
-        lbl = []
+    with open('bl.txt', 'r') as file:
+        blc = [w.lower().strip() for w in file.readlines()]
+        for chara in bl:
+            blc.append(chara)
 
-    # with open("bl.txt", "r") as file:
-    # blc = [w.lower().strip() for w in file.readlines()]
-    #
-    blc = [w.lower().strip() for w in lbl]
-    bluser = await is_bisu_user(user)
-    for chara in bl:
-        blc.append(chara)
     for chara in blc:
         if chara in x:
             return True
