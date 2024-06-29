@@ -8,7 +8,7 @@ from pyrogram import filters
 from pyrogram.types import ChatPermissions, Message
 
 import app
-from misc import SUDOERS
+from bl.misc import SUDOERS
 from bl.decorators.errors import capture_err
 from bl.decorators.permissions import adminsOnly
 from bl.decorators.admins1 import list_admins
