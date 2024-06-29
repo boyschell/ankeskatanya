@@ -14,3 +14,11 @@ GOKIL = ". ! ? / , - +"
 PREFIX = GOKIL.split()
 OWNER_ID = list(map(int, os.getenv("OWNER_ID", "5272203652").split()))
 LOGGER_ID = int(getenv("LOGGER_ID", -1002063271971))
+
+
+BANNED_USERS = filters.user()
+adminlist = {}
+lyrical = {}
+votemode = {}
+autoclean = []
+confirmer = {}
