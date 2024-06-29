@@ -2,6 +2,9 @@ import os
 
 from dotenv import load_dotenv
 
+import re
+from pyrogram import filters
+
 load_dotenv()
 
 
