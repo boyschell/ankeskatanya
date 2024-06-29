@@ -9,15 +9,15 @@ from pyrogram.types import ChatPermissions, Message
 
 from ankeskatanya import app
 from ankeskatanya.misc import SUDOERS
-from ankeskatanya.utils.decorators.errors import capture_err
-from ankeskatanya.utils.decorators.permissions import adminsOnly
-from ankeskatanya.utils.decorators.admins1 import list_admins
-from ankeskatanya.utils.database import (
+from ankeskatanya.bl.decorators.errors import capture_err
+from ankeskatanya.bl.decorators.permissions import adminsOnly
+from ankeskatanya.bl.decorators.admins1 import list_admins
+from ankeskatanya.bl.database import (
     delete_blacklist_filter,
     get_blacklisted_words,
     save_blacklist_filter,
 )
-from ankeskatanya.utils.filter_group import blacklist_filters_group
+from ankeskatanya.bl.filter_group import blacklist_filters_group
 
 
 
