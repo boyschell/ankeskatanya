@@ -7,12 +7,12 @@ from pyrogram.enums import ParseMode
 from pyrogram import filters
 from pyrogram.types import ChatPermissions, Message
 
-from ankeskatanya import app
-from ankeskatanya.misc import SUDOERS
-from ankeskatanya.bl.decorators.errors import capture_err
-from ankeskatanya.bl.decorators.permissions import adminsOnly
-from ankeskatanya.bl.decorators.admins1 import list_admins
-from ankeskatanya.bl.database import (
+import app
+from misc import SUDOERS
+from bl.decorators.errors import capture_err
+from bl.decorators.permissions import adminsOnly
+from bl.decorators.admins1 import list_admins
+from bl.database import (
     delete_blacklist_filter,
     get_blacklisted_words,
     save_blacklist_filter,
