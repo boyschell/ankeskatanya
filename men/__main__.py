@@ -218,7 +218,7 @@ from bl.filter_group import blacklist_filters_group
 
 
 
-@app.on_message(filters.command("bl") & ~filters.private)
+@app.on_message(filters.command("bl", PREFIX) & ~filters.private)
 @adminsOnly("can_restrict_members")
 async def save_filters(_, message: Message):
     user = message.from_user
@@ -265,7 +265,7 @@ async def save_filters(_, message: Message):
             "Usage:\n/bl [triggers] - The words/sentences you want to blacklist",
 )
 
-@app.on_message(filters.command("listbl") & ~filters.private)
+@app.on_message(filters.command("listbl", PREFIX) & ~filters.private)
 @capture_err
 async def get_filterss(_, message):
     data = await get_blacklisted_words(message.chat.id)
@@ -278,7 +278,7 @@ async def get_filterss(_, message):
         await message.reply_text(msg)
 
 
-@app.on_message(filters.command("delbl") & ~filters.private)
+@app.on_message(filters.command("delbl", PREFIX) & ~filters.private)
 @adminsOnly("can_restrict_members")
 async def del_filter(_, message):
     if len(message.command) < 2:
