@@ -1,2 +1,2 @@
-from .admins import *
+from .admins1 import *
 from .language import *
