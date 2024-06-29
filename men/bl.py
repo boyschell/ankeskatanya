@@ -17,7 +17,7 @@ from bl.database import (
     get_blacklisted_words,
     save_blacklist_filter,
 )
-from ankeskatanya.bl.filter_group import blacklist_filters_group
+from bl.filter_group import blacklist_filters_group
 
 
 
