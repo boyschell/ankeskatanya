@@ -6,7 +6,7 @@ from pyrogram.types import (CallbackQuery, ChatMemberUpdated, ChatPermissions, C
 )
 from time import time
 from config import adminlist
-#from strings import get_string
+from strings import get_string
 import app
 from bl.misc import SUDOERS
 #from AnonXMusic.utils.database.mongodatabase import *
