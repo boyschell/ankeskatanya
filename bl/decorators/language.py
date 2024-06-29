@@ -1,4 +1,4 @@
-from strings import get_string
+#from strings import get_string
 
 from bl import app
 from bl.misc import SUDOERS
@@ -46,7 +46,7 @@ def languageCB(mystic):
 
     return wrapper
 
-
+"""
 def LanguageStart(mystic):
     async def wrapper(_, message, **kwargs):
         try:
