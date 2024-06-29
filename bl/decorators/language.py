@@ -1,7 +1,7 @@
 from strings import get_string
 
 from bl import app
-from bl import SUDOERS
+from bl.misc import SUDOERS
 from config import SUPPORT_CHAT
 from bl.database import get_lang, is_maintenance
 
