@@ -7,7 +7,7 @@ from pyrogram.enums import ParseMode
 from pyrogram import filters
 from pyrogram.types import ChatPermissions, Message
 
-import app
+from men import app
 from bl.misc import SUDOERS
 from bl.decorators.errors import capture_err
 from bl.decorators.permissions import adminsOnly
