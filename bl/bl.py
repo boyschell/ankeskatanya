@@ -7,17 +7,17 @@ from pyrogram.enums import ParseMode
 from pyrogram import filters
 from pyrogram.types import ChatPermissions, Message
 
-from AnonXMusic import app
-from AnonXMusic.misc import SUDOERS
-from AnonXMusic.utils.decorators.errors import capture_err
-from AnonXMusic.utils.decorators.permissions import adminsOnly
-from AnonXMusic.utils.decorators.admins1 import list_admins
-from AnonXMusic.utils.database import (
+from ankeskatanya import app
+from ankeskatanya.misc import SUDOERS
+from ankeskatanya.utils.decorators.errors import capture_err
+from ankeskatanya.utils.decorators.permissions import adminsOnly
+from ankeskatanya.utils.decorators.admins1 import list_admins
+from ankeskatanya.utils.database import (
     delete_blacklist_filter,
     get_blacklisted_words,
     save_blacklist_filter,
 )
-from AnonXMusic.utils.filter_group import blacklist_filters_group
+from ankeskatanya.utils.filter_group import blacklist_filters_group
 
 
 
