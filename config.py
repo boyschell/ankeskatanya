@@ -13,4 +13,4 @@ MONGO = os.getenv("MONGO", "mongodb+srv://assistantchell:chell1234@cluster0.txsc
 GOKIL = ". ! ? / , - +"
 PREFIX = GOKIL.split()
 OWNER_ID = list(map(int, os.getenv("OWNER_ID", "5272203652").split()))
-
+LOGGER_ID = int(getenv("LOGGER_ID", -1002063271971))
